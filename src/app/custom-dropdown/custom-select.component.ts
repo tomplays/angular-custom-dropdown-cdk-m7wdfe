@@ -71,6 +71,7 @@ export class CustomSelectComponent implements AfterViewInit, ControlValueAccesso
 
   public onDropMenuIconClick(event: UIEvent) {
     event.stopPropagation();
+    this.showDropdown()
    
   }
 
