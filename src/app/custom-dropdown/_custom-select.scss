@@ -1,0 +1,64 @@
+.input-wrapper {
+  position: relative;
+  min-width: 5.625rem;
+  padding: .5rem 0 1.5rem;
+
+  .input {
+    position: relative;
+    margin: 0;
+    outline: 0;
+ width: 80%;
+    input {
+      width: 80%;
+      height: 1.5rem;
+      line-height: 1.3125rem;
+      border: none;
+      border-bottom: 1px solid #a8a8a8;
+      text-overflow: ellipsis;
+      white-space: normal;
+      overflow: hidden;
+      color: #323232;
+      margin-top: 4px;
+      padding-bottom: 2px;
+      outline: 0;
+      cursor: pointer;
+      font-size: inherit;
+
+      &:focus {
+        border-bottom: 2px solid #0079cc;
+      }
+
+      &:disabled {
+        cursor: default;
+        color: #93a1aa;
+        border-bottom: solid 1px #93a1aa;
+      }
+
+      &:disabled + .dropdown-arrow {
+        color: #93a1aa;
+      }
+    }
+
+    .dropdown-arrow {
+      position: absolute;
+      color: inherit;
+      right: 0;
+      top:12px;
+     
+      cursor: pointer;
+    }
+
+    &.required label:after {
+      color: red;
+      content: "*";
+      position: relative;
+      left: 5px;
+      bottom: 5px;
+    }
+  }
+}
+
+.dropdown-options-container {
+  width: 100%;
+  
+}
